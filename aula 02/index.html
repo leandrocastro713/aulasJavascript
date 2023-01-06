@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Aula 2</title>
+</head>
+<body>
+    <div>
+        <p>Titulo da notícia <strong>um</strong>.</p>
+    </div>
+    <div>
+        <p>Titulo da notícia <strong>dois</strong>.</p>
+    </div>
+    <img src="../../aulas-curso/gnr/img/gnr-poster.jpg" alt="alt da imagem">
+</body>
+<script>
+    let msgAlt = document.querySelector('img').alt;
+    let troca = document.querySelectorAll('div>p>strong')[1];
+    // troca = msgAlt
+    troca.textContent=msgAlt
+    console.log(troca)
+</script>
+</html>
