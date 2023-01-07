@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <p>Titulo da notícia <strong>um</strong>.</p>
+        <p id = 'titulo'>Titulo da notícia <strong><i>um</i></strong>.</p>
     </div>
     <div>
         <p>Titulo da notícia <strong>dois</strong>.</p>
@@ -18,8 +18,12 @@
 <script>
     let msgAlt = document.querySelector('img').alt;
     let troca = document.querySelectorAll('div>p>strong')[1];
-    // troca = msgAlt
-    troca.textContent=msgAlt
-    console.log(troca)
+    let titulo = document.querySelector('#titulo');
+    let titulo_i = document.querySelector('#titulo>strong>i');
+    titulo.style.backgroundColor = 'red';
+    titulo_i.style.backgroundColor = 'green'
+    troca.textContent=msgAlt;
+    console.log(troca);
+
 </script>
 </html>

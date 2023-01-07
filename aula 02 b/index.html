@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06.01 B</title>
+    <style>
+        .noticia{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid grey;
+            background-color: rgb(240,240,240);
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,.5);
+            padding: 20px;
+            margin: 50px;
+            width: 400px;
+        }
+        .estilo{
+            padding: 50px;
+            background-color: brown;
+            color: greenyellow;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="noticia">
+        <h1>Titulo da Noticia</h1>
+        <h3 id="sumario">Sumario da noticia</h3>
+        <img src="../../aulas-curso/gnr/img/Appetite_for_Destruction.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aliquid porro eligendi, doloremque inventore illum sapiente quo, voluptas maiores atque ut odio praesentium quae autem obcaecati eos accusamus expedita saepe!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aliquid porro eligendi, doloremque inventore illum sapiente quo, voluptas maiores atque ut odio praesentium quae autem obcaecati eos accusamus expedita saepe!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aliquid porro eligendi, doloremque inventore illum sapiente quo, voluptas maiores atque ut odio praesentium quae autem obcaecati eos accusamus expedita saepe!</p>
+    </div>
+</body>
+    <script>
+        document.querySelectorAll('p')[1].setAttribute('class','estilo')
+    </script>
+</html>
