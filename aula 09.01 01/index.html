@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09.01</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .btn{
+            display:block;
+            position: relative;
+            padding: 5px 15px;
+            width: 160px;
+            height: 40px;
+            margin: 4px;
+            border-radius: 5px;
+        }
+        .caixa{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 50px auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+        .falha{
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            color:white;
+            font-weight: bold;
+        }
+        .sucesso{
+            padding: 5px;
+            text-align: center;
+            background-color: green;
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="caixa">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit?</p>
+
+    </div>
+    
+    <button class='btn' onclick="falha()">Falha</button>
+    <button class='btn' onclick="sucesso()">Sucesso</button>
+
+    <script>
+        function falha(){
+            //criaçao de um novo elemento
+            let novoElemento = document.createElement('p');
+            //inserir informações (características)
+            novoElemento.className='falha';
+            novoElemento.innerText="Esta é uma mensagem de alerta"
+            //inseriri este novo elemento
+            let el=document.querySelector('div')
+            el.appendChild(novoElemento)
+        }
+        function sucesso(){
+            //criaçao de um novo elemento
+            let novoElemento = document.createElement('p');
+            //inserir informações (características)
+            novoElemento.className='sucesso';
+            novoElemento.innerText="Esta é uma mensagem de alerta"
+            //inseriri este novo elemento
+            let el=document.querySelector('div')
+            el.appendChild(novoElemento)
+        }
+    </script>
+</body>
+</html>
